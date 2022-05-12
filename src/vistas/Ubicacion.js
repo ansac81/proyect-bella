@@ -17,7 +17,12 @@ import { FaTwitterSquare } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
 import {GrClose} from 'react-icons/gr';
+import {MdLocationPin} from 'react-icons/md';
+import {FiMail} from 'react-icons/fi';
+import {BsFillTelephoneFill} from 'react-icons/bs';
+import {AiOutlineContacts} from 'react-icons/ai';
 import '../App.css';
+import './Ubicacion.css';
 
 function Home() {
     return (
@@ -47,10 +52,35 @@ function Home() {
           {/*<img className='Logo' src={bella}/>
           <h1>Bella Dona Oggi</h1>   */}    
         </header>
-  
-  {/*Comienza Formulario*/}
-  <p>HOLA ubicacion!!!</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.9555611225824!2d-103.30705731578276!3d21.78198084491728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842813d198b4fe03%3A0xcc4d5186dc0764d7!2sMorelos%202%2C%20Centro%2C%2099700%20Tlaltenango%20de%20S%C3%A1nchez%20Rom%C3%A1n%2C%20Zac.!5e0!3m2!1ses!2smx!4v1650806843804!5m2!1ses!2smx" width="600" height="450" style={{border:0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div className='titulo'>
+            <h1>CONTACTANOS</h1>
+          </div>
+          <div className='contenedor'>
+    {/*Datos contacto*/}
+            <div className='datos'>
+              <div className='datos1'>
+                <span className='iconos'><MdLocationPin /></span>
+                <p><b>Dirección</b> <br></br><b>C. Morelos # 2</b><br></br><b> Zacatecas, C.P. 99700</b><br></br><br></br><br></br></p>
+              </div>
+              <div className='datos2'>
+                <span className='iconos'><FiMail /></span>
+                <p><b>belladonnashops@gmail.com</b><br></br><b>contactobelladonna@gmail.com</b><br></br><br></br><br></br><br></br></p>
+              </div>
+              <div className='datos3'>
+                <span className='iconos'><BsFillTelephoneFill /></span>
+                <p><b>LLAMANOS:</b><br></br><b>(437) 95 4 3817.</b><br></br><b>(437) 95 4 3818.</b><br></br><br></br><br></br></p>
+              </div>
+              <div className='datos4'>
+                <span className='iconos'><AiOutlineContacts /></span>
+                <p><b>CONTACTANOS EN NUESTRAS REDES SOCIALES:</b><br></br><br></br><br></br><br></br></p>
+              </div>
+            </div>
+    {/*Mapa*/}
+            <div className='mapa'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.9555611225824!2d-103.30705731578276!3d21.78198084491728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842813d198b4fe03%3A0xcc4d5186dc0764d7!2sMorelos%202%2C%20Centro%2C%2099700%20Tlaltenango%20de%20S%C3%A1nchez%20Rom%C3%A1n%2C%20Zac.!5e0!3m2!1ses!2smx!4v1650806843804!5m2!1ses!2smx" width="100%" height="453" style={{border:0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          
 
   {/*Aqui comienza el pie de pagina*/}
         <footer className="pie-pagina">

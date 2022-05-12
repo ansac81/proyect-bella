@@ -1,0 +1,54 @@
+.titulo h1{
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 5px;
+    background-color: rgb(219, 219, 219);
+
+}
+.contenedor{
+    width: 95%;
+    height: 460px;
+    margin: 0px auto;
+}
+.mapa{
+    width: 50%;
+    height: 460px;
+    float: left;
+}
+.datos{
+    width: 50%;
+    float: left;
+}
+.datos1{
+    background-color: rgb(219, 219, 219);
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.datos2{
+    background-color: rgb(219, 219, 219);
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.datos3{
+    background-color: rgb(219, 219, 219);
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.datos4{
+    background-color: rgb(219, 219, 219);
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.iconos{
+    color: #ca55b9;
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+}
+.datos1, .datos2, .datos3, .datos4{
+    text-align: center;
+}
