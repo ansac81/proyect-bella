@@ -1,0 +1,31 @@
+.categorias{
+    width: 750px;
+    margin: 0px auto;
+    background-color: #dbdbdb;
+    border-radius: 25px;
+}
+
+.titlecatego h2{
+    width: 59%;
+    margin: 0px auto;
+    margin-top: 10px;
+    color: #b74da7;
+    font-size: 25px;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+}
+
+.categorias p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.categorias a{
+    text-decoration: none;
+    color: white;
+}
+
+.categorias a:hover{
+    color: #b74da7;
+}

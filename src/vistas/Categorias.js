@@ -1,23 +1,21 @@
 import React from 'react';
 import bella from '../assets/images/bella.jpg';
-import trespordos from '../assets/images/trespordos.jpg';
-import blackfriday from '../assets/images/blackfriday.jpg';
-import lunescibernetico from '../assets/images/lunescibernetico.jpg';
 import { //Librerias para la navegacion entre diferentes paginas
   Link
 } from 'react-router-dom';
-import labial from '../assets/images/labial.jpg'
-import lenceria from '../assets/images/lenceria.jpg'
-import rimel from '../assets/images/rimel.jpg'
-import crema from '../assets/images/crema.jpg'
-import ropainterior from '../assets/images/ropainterior.jpg'
+import cosmeticos from '../assets/images/cosmeticos.jpg'
+import cremas from '../assets/images/cremas.jpg'
+import perfumeria from '../assets/images/perfumeria.jpg'
+import ropa from '../assets/images/ropa.jpg'
+import accesorios from '../assets/images/accesorios.jpg'
+import electronicos from '../assets/images/electronicos.jpg'
 import { FaFacebook } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
 import {BsSearch} from 'react-icons/bs';
-import {GrClose} from 'react-icons/gr';
 import '../App.css';
+import './Categorias.css';
 
 function Home() {
     return (
@@ -49,7 +47,95 @@ function Home() {
         </header>
   
   {/*Comienza Categorias*/}
-          <p>HOLA Categorias!!!</p>
+          <div className='titlecatego'>
+              <h2>CATEGORÍAS</h2>
+          </div>
+  {/*Comienza secciones Categorias*/}
+          <div className='categorias'>
+            <div className='pruductos-especiales'>
+              <div className='slider-carrusel'>
+                <div className='image'>
+                  <img src={cosmeticos}/>
+                  <div className='button'>
+                    <a href='#' className='btn'><Link to="/cosmeticos">Ir a sección</Link></a>
+                  </div>
+                </div>
+                <div className='product-details'>
+                  <div className='product-name'>
+                  <p><b>Cosmeticos</b></p>
+                  </div>
+                </div>
+              </div>
+              <div className='slider-carrusel'>
+                <div className='image'>
+                  <img src={perfumeria}/>
+                  <div className='button'>
+                    <a href='#' className='btn'><Link to="/perfumeria">Ir a sección</Link></a>
+                  </div>
+                </div>
+                <div className='product-details'>
+                  <div className='product-name'>
+                    <p><b>Perfumeria</b></p>
+                  </div>
+                </div>
+              </div>
+              <div className='slider-carrusel'>
+                <div className='image'>
+                  <img src={cremas}/>
+                  <div className='button'>
+                    <a href='#' className='btn'><Link to="/cremas">Ir a sección</Link></a>
+                  </div>
+                </div>
+                <div className='product-details'>
+                  <div className='product-name'>
+                    <p><b>Cremas</b></p>
+                  </div>
+                </div>
+              </div>         
+            </div>
+              {/*segunda seccion Categorias*/}
+            <div className='pruductos-especiales'>
+              <div className='slider-carrusel'>
+                <div className='image'>
+                  <img src={ropa}/>
+                  <div className='button'>
+                    <a href='#' className='btn'><Link to="/ropa">Ir a sección</Link></a>
+                  </div>
+                </div>
+                <div className='product-details'>
+                  <div className='product-name'>
+                    <p><b>Ropa y Lencería</b></p>
+                  </div>
+                </div>
+              </div>
+              <div className='slider-carrusel'>
+                <div className='image'>
+                  <img src={accesorios}/>
+                  <div className='button'>
+                    <a href='#' className='btn'><Link to="/accesorios">Ir a sección</Link></a>
+                  </div>
+                </div>
+                <div className='product-details'>
+                  <div className='product-name'>
+                    <p><b>Accesorios</b></p>
+                  </div>
+                </div>
+              </div>
+              <div className='slider-carrusel'>
+                <div className='image'>
+                  <img src={electronicos}/>
+                  <div className='button'>
+                    <a href='#' className='btn'><Link to="/electronicos">Ir a sección</Link></a>
+                  </div>
+                </div>
+                <div className='product-details'>
+                  <div className='product-name'>
+                    <p><b>Electronicos</b></p>
+                  </div>
+                </div>
+              </div>         
+            </div>
+          </div>
 
   {/*Aqui comienza el pie de pagina*/}
         <footer className="pie-pagina">
