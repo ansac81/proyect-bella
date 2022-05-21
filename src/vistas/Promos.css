@@ -1,0 +1,14 @@
+.contenido-promos{
+    margin: 0px auto;
+    padding: 5px;
+    width: 1000px;
+    background-color: #dbdbdb;
+}
+.promo{
+    margin: 20px;
+}
+
+.promo img{
+    width: 950px;
+    height: 400px;
+}
